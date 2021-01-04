@@ -1,0 +1,1166 @@
+﻿@{
+    Layout = null;
+}
+
+<!--
+=========================================================
+* Argon Design System - v1.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-design-system
+* Copyright 2020 Creative Tim (http://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="~/Content/images/icons/apple-icon.png">
+    <link rel="icon" type="image/png" href="~/Content/images/icons/favicon.png">
+    <meta name="csrf-token" content="YSV0woDIt60OSgN2ES1zL7m8AMaFQLylTDeDp8if">
+    <meta property="og:image" content="/default/logo_qrzebra.png">
+    <title>QR Menu Maker</title>
+
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/459f34aff4.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Icons -->
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/nucleo-svg.css" rel="stylesheet" />
+    <link href="~/Content/nucleo-icons.css" rel="stylesheet" />
+
+    <!-- CSS Files -->
+    <link href="~/Content/argon-design-system.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="~/Content/custom.css" rel="stylesheet" />
+
+    <!-- Select2 -->
+    <link href="~/Content/select2.min.css" rel="stylesheet" />
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Chrome for Android theme color -->
+    <meta name="theme-color" content="#000000">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="QR Menu Maker">
+    <link rel="icon" sizes="256x256" href="android-chrome-256x256.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="QR Menu Maker">
+    <link rel="apple-touch-icon" href="android-chrome-256x256.png">
+
+
+    <link href="/images/icons/splash-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-1242x2208.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-828x1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-1242x2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-1536x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-1668x2224.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-1668x2388.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-2048x2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+    <!-- Tile for Win8 -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="android-chrome-256x256.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Custom CSS defined by admin -->
+    <link href="~/Content/front.css" rel="stylesheet" />
+
+</head>
+
+<body class="">
+    <form id="logout-form" action="http://localhost/logout" method="POST" style="display: none;">
+        <input type="hidden" name="_token" value="YSV0woDIt60OSgN2ES1zL7m8AMaFQLylTDeDp8if">
+    </form>
+
+
+
+    <!-- Navbar -->
+    <nav id="navbar-main" class="navbar navbar-light navbar-expand-lg fixed-top">
+
+
+        <div class="container-fluid">
+            <a class="navbar-brand mr-lg-5" href="/">
+                <img src="~/Content/images/logo_qrzebra.png">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar_global">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a href="#">
+                                <img src="/default/logo_qrzebra.png">
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- End Navbar -->
+    <div class="wrapper">
+        <div class="modal fade" id="productModal" z-index="9999" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 id="modalTitle" class="modal-title" id="modal-title-new-item"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="card bg-secondary shadow border-0">
+                            <div class="card-body px-lg-5 py-lg-5">
+                                <div class="row">
+                                    <div class="col-sm col-md col-lg col-lg text-center">
+                                        <img id="modalImg" src="" width="295px" height="200px">
+                                    </div>
+                                    <div class="col-sm col-md col-lg col-lg">
+                                        <input id="modalID" type="hidden"></input>
+                                        <span id="modalPrice" class="new-price"></span>
+                                        <p id="modalDescription"></p>
+                                        <div id="variants-area">
+                                            <label class="form-control-label">Select your options</label>
+                                            <div id="variants-area-inside">
+                                            </div>
+                                        </div>
+
+
+
+                                        <div id="exrtas-area">
+                                            <br />
+                                            <label class="form-control-label" for="quantity">Extras</label>
+                                            <div id="exrtas-area-inside">
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-import-restaurants" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+            <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="modal-title-new-item">Import restaurants from CSV</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="card bg-secondary shadow border-0">
+                            <div class="card-body px-lg-5 py-lg-5">
+                                <div class="col-md-10 offset-md-1">
+                                    <form role="form" method="post" action="http://localhost/import/restaurants" enctype="multipart/form-data">
+                                        <input type="hidden" name="_token" value="YSV0woDIt60OSgN2ES1zL7m8AMaFQLylTDeDp8if">                            <div class="form-group text-center">
+                                            <label class="form-control-label" for="resto_excel">Import your file</label>
+                                            <div class="text-center">
+                                                <input type="file" class="form-control form-control-file" name="resto_excel" accept=".csv, .ods, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" required>
+                                            </div>
+                                        </div>
+                                        <input name="category_id" id="category_id" type="hidden" required>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary my-4">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-restaurant-info" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+            <div class="modal-dialog modal- modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="card">
+                            <div class="card-header bg-white text-center">
+                                <img class="rounded" src="https://foodtiger.mobidonia.com/uploads/restorants/9d180742-9fb3-4b46-8563-8c24c9004fd3_thumbnail.jpg" width="90px" height="90px"></img>
+                                <h4 class="heading mt-4">Leuka Pizza &nbsp;</h4>
+                                <p class="description">italian, pasta, pizza</p>
+                                <p class="description">Open: 5:00 AM - 11:00 PM</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="nav-wrapper">
+                                    <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">Reviews</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h6 class="heading-small">Phone</h6>
+                                                <p class="heading-small text-muted">(530) 625-9694</p>
+                                                <br />
+                                                <h6 class="heading-small">Address</h6>
+                                                <p class="heading-small text-muted">6 Yukon Drive Raeford, NC 28376</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <div id="map3" class="form-control form-control-alternative"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+                                        <p>There are no reviews yet.<p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="section-profile-cover section-shaped grayscale-05 d-none d-md-none d-lg-block d-lx-block">
+            <!-- Circles background -->
+            <img class="bg-image" loading="lazy" src="~/Content/images/cover.jpg" style="width: 100%;">
+            <!-- SVG separator -->
+            <div class="separator separator-bottom separator-skew">
+                <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+
+        <section class="section pt-lg-0 mb--5 mt--9 d-none d-md-none d-lg-block d-lx-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="title white" style="border-bottom: 1px solid #f2f2f2;">
+                            <h1 class="display-3 text-white" data-toggle="modal" data-target="#modal-restaurant-info" style="cursor: pointer;">Leuka Pizza</h1>
+                            <p class="display-4" style="margin-top: 120px">italian, pasta, pizza</p>
+                            <p><i class="far fa-clock"></i>   <span>5:00 AM</span> - <span>11:00 PM</span> |   <i class="fas fa-map-marker-alt"></i> <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=6+Yukon+Drive+Raeford%2C+NC+28376">6 Yukon Drive Raeford, NC 28376</a>  |  <i class="fas fa-mobile-alt"></i> <a href="tel:(530) 625-9694">(530) 625-9694 </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-lg d-md-block d-lg-none d-lx-none" style="padding-bottom: 0px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="title">
+                            <h1 class="display-3 text" data-toggle="modal" data-target="#modal-restaurant-info" style="cursor: pointer;">Leuka Pizza</h1>
+                            <p class="display-4 text">italian, pasta, pizza</p>
+                            <p>Today working hours: <span><strong>5:00 AM</strong></span> - <span><strong>11:00 PM</strong></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section pt-lg-0" id="restaurant-content" style="padding-top: 0px">
+            <input type="hidden" id="rid" value="1" />
+            <div class="container container-restorant">
+
+                <nav class="tabbable sticky" style="top: 64px;">
+                    <ul class="nav nav-pills bg-white mb-2">
+                        <li class="nav-item nav-item-category ">
+                            <a class="nav-link  mb-sm-3 mb-md-0 active" data-toggle="tab" role="tab" href="">All categories</a>
+                        </li>
+                        <li class="nav-item nav-item-category" id="cat_salads0">
+                            <a class="nav-link mb-sm-3 mb-md-0" data-toggle="tab" role="tab" id="nav_salads0" href="#salads0">Salads</a>
+                        </li>
+                        <li class="nav-item nav-item-category" id="cat_pizza1">
+                            <a class="nav-link mb-sm-3 mb-md-0" data-toggle="tab" role="tab" id="nav_pizza1" href="#pizza1">Pizza</a>
+                        </li>
+                        <li class="nav-item nav-item-category" id="cat_freshpastaandrisotto2">
+                            <a class="nav-link mb-sm-3 mb-md-0" data-toggle="tab" role="tab" id="nav_freshpastaandrisotto2" href="#freshpastaandrisotto2">Fresh Pasta and Risotto</a>
+                        </li>
+                        <li class="nav-item nav-item-category" id="cat_lasagna3">
+                            <a class="nav-link mb-sm-3 mb-md-0" data-toggle="tab" role="tab" id="nav_lasagna3" href="#lasagna3">Lasagna</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <div id="salads0" class="salads0">
+                    <h1>Salads</h1><br />
+                </div>
+                <div class="row salads0">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(1)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/bd5292e7-e898-479d-8921-4c47a776ba82_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(1)" href="javascript:void(0)">Caprese Salad (350gr)</a></b></span><br />
+                            <span class="res_description">peeled tomatoes, mozzarella salad,...</span><br />
+                            <span class="res_mimimum">€9,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(2)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/25ed56dc-45cc-473f-ad00-d4b449acc71a_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(2)" href="javascript:void(0)">Caesar Salad (400g)</a></b></span><br />
+                            <span class="res_description">iceberg, bacon, chicken breast,...</span><br />
+                            <span class="res_mimimum">€10,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(3)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/93641a19-dba6-4010-a852-0e88da83a01f_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(3)" href="javascript:void(0)">Salad Napoli (350g)</a></b></span><br />
+                            <span class="res_description">iceberg, arugula, cherry tomatoes,...</span><br />
+                            <span class="res_mimimum">€9,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(4)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/d3379607-df34-4ed0-8f87-8bb6f73ed16d_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(4)" href="javascript:void(0)">Green tuna salad (400g)</a></b></span><br />
+                            <span class="res_description">lettuce, cucumbers, tuna, olive, corn,...</span><br />
+                            <span class="res_mimimum">€9,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(5)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/2e7eb9a6-5307-4ec7-8cf8-86490d4c2363_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(5)" href="javascript:void(0)">Green salad (350g)</a></b></span><br />
+                            <span class="res_description">lettuce, cucumbers, radishes, onions,...</span><br />
+                            <span class="res_mimimum">€7,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(6)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/f5a8b88d-9b94-44fc-9555-2f0fe043d624_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(6)" href="javascript:void(0)">Greek Salad (500g)</a></b></span><br />
+                            <span class="res_description">tomatoes, cucumbers, green pepper, red...</span><br />
+                            <span class="res_mimimum">€9,99</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="pizza1" class="pizza1">
+                    <h1>Pizza</h1><br />
+                </div>
+                <div class="row pizza1">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(7)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/f71ae2d7-f24f-4e1b-9bdd-7ab7143ce3c8_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(7)" href="javascript:void(0)">Mozzarella Pizza</a></b></span><br />
+                            <span class="res_description">tomato sauce, mozzarella sabelli,...</span><br />
+                            <span class="res_mimimum">€10,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(8)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/9b9886cb-5d4b-4bfe-a02a-dc3b94dae706_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(8)" href="javascript:void(0)">Prosciutto crust pizza</a></b></span><br />
+                            <span class="res_description">tomato sauce, mozzarella sabelli,...</span><br />
+                            <span class="res_mimimum">€14,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(9)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/4b26647d-52b8-43c5-8b62-708c99252c24_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(9)" href="javascript:void(0)">Pepperoni Pizza</a></b></span><br />
+                            <span class="res_description">tomato sauce, mozzarella Sabelli,...</span><br />
+                            <span class="res_mimimum">€14,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(10)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/e1e5559a-ca6d-4a34-80c6-b72c31d97d96_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(10)" href="javascript:void(0)">Carriola Pizza</a></b></span><br />
+                            <span class="res_description">tomato sauce, mozzarella sabelli,...</span><br />
+                            <span class="res_mimimum">€14,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(11)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/a8e8c22a-84cd-48d0-971a-2c98e695e387_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(11)" href="javascript:void(0)">Perugia Pizza</a></b></span><br />
+                            <span class="res_description">tomato sauce, mozzarella sabelli,...</span><br />
+                            <span class="res_mimimum">€14,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(12)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/5c8fa7eb-bc11-42e1-a1a5-ffb0b3d7a6b7_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(12)" href="javascript:void(0)">Pizza Napoli</a></b></span><br />
+                            <span class="res_description">tomato sauce, mozzarella sabelli, ham,...</span><br />
+                            <span class="res_mimimum">€14,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(13)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/9d180742-9fb3-4b46-8563-8c24c9004fd3_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(13)" href="javascript:void(0)">Margarita Pizza</a></b></span><br />
+                            <span class="res_description">tomato sauce, mozzarella Sabelli, extra...</span><br />
+                            <span class="res_mimimum">€10,49</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(14)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/cb7372d0-73a8-4551-bc31-22035d9551c4_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(14)" href="javascript:void(0)">Combo Pizza 50/50 (70cm)</a></b></span><br />
+                            <span class="res_description"></span><br />
+                            <span class="res_mimimum">€39,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(15)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/0102bebe-b6c4-46b0-9195-ee06bca71a37_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(15)" href="javascript:void(0)">Capricciosa Pizza</a></b></span><br />
+                            <span class="res_description">tomato sauce, mozzarella sabelli, ham,...</span><br />
+                            <span class="res_mimimum">€14,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(16)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/0054144d-131c-4807-a209-cee855415182_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(16)" href="javascript:void(0)">Quattro Formaggi Pizza</a></b></span><br />
+                            <span class="res_description">cream (animal), mozzarella Sabelli,...</span><br />
+                            <span class="res_mimimum">€14,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(17)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/f77218a9-676e-434e-ac5b-4ae3dc5795b3_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(17)" href="javascript:void(0)">Marco Polo Pizza</a></b></span><br />
+                            <span class="res_description">tomato sauce, Sabelli mozzarella,...</span><br />
+                            <span class="res_mimimum">€14,99</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="freshpastaandrisotto2" class="freshpastaandrisotto2">
+                    <h1>Fresh Pasta and Risotto</h1><br />
+                </div>
+                <div class="row freshpastaandrisotto2">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(18)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/b65d5389-4742-4a78-9d94-f31110984db6_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(18)" href="javascript:void(0)">Spaghetti Carbonara (450g)</a></b></span><br />
+                            <span class="res_description">fresh pasta, cream (animal), onion,...</span><br />
+                            <span class="res_mimimum">€11,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(19)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/4a2067cb-f39c-4b26-83ef-9097512d3328_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(19)" href="javascript:void(0)">Spaghetti Formaggi (450g)</a></b></span><br />
+                            <span class="res_description">fresh pasta, cream (animal), blue...</span><br />
+                            <span class="res_mimimum">€11,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(20)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/0bae6238-dda6-4630-b300-5125fde865d4_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(20)" href="javascript:void(0)">Tagliatelle with mushrooms (400g)</a></b></span><br />
+                            <span class="res_description">fresh pasta, cream (animal), mushrooms,...</span><br />
+                            <span class="res_mimimum">€11,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(21)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/033c32c1-cdae-495e-910f-66b5fa239297_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(21)" href="javascript:void(0)">Chicken risotto (450g)</a></b></span><br />
+                            <span class="res_description">Arborio rice, chicken breast, onion,...</span><br />
+                            <span class="res_mimimum">€11,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(22)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/08d82944-f947-48f4-a197-a3199bb3b6e7_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(22)" href="javascript:void(0)">Risotto with mushrooms (450g)</a></b></span><br />
+                            <span class="res_description">Arborio rice, mushrooms, garlic,...</span><br />
+                            <span class="res_mimimum">€11,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(23)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/cc695ba9-8af3-47a4-8e41-dc1706cbf2c3_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(23)" href="javascript:void(0)">Tagliatelle with Bolognese Sauce (400g)</a></b></span><br />
+                            <span class="res_description">fresh pasta, bolognese sauce, parmesan</span><br />
+                            <span class="res_mimimum">€11,99</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="lasagna3" class="lasagna3">
+                    <h1>Lasagna</h1><br />
+                </div>
+                <div class="row lasagna3">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(24)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/94d44523-ec90-4069-bd11-eb9588207c31_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(24)" href="javascript:void(0)">Lasagna Classic (450g)</a></b></span><br />
+                            <span class="res_description">Bolognese sauce, mozzarella Sabelli</span><br />
+                            <span class="res_mimimum">€11,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(25)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/4c367950-992c-4711-ab56-42bed10de86c_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(25)" href="javascript:void(0)">Napoli Lasagna (450g)</a></b></span><br />
+                            <span class="res_description">chicken fillet, cream (animal), corn,...</span><br />
+                            <span class="res_mimimum">€11,99</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="strip">
+                            <figure>
+                                <a onClick="setCurrentItem(26)" href="javascript:void(0)"><img src="https://foodtiger.mobidonia.com/uploads/restorants/8bafc3ec-82e7-46f8-964a-77a13e4ddf96_large.jpg" loading="lazy" data-src="/default/restaurant_large.jpg" class="img-fluid lazy" alt=""></a>
+                            </figure>
+                            <span class="res_title"><b><a onClick="setCurrentItem(26)" href="javascript:void(0)">Lasagna Formagio (450g)</a></b></span><br />
+                            <span class="res_description">smoked cheese, blue cheese, emmental,...</span><br />
+                            <span class="res_mimimum">€11,99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <i id="scrollTopBtn" onclick="topFunction()" class="fa fa-arrow-up btn-danger"></i>
+
+        </section>
+        <div id="cartSideNav" class="sidenav-cart sidenav-cart-close">
+            <div class="offcanvas-menu-inner">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="minicart-content">
+                    <div class="minicart-heading">
+                        <h4>Shopping Cart</h4>
+                    </div>
+                    <div class="searchable-container">
+                        <div id="cartList">
+                            <div v-for="item in items" class="items col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix">
+                                <div class="info-block block-info clearfix" v-cloak>
+                                    <div class="square-box pull-left">
+                                        <img :src="item.attributes.image" class="productImage" width="100" height="105" alt="">
+                                    </div>
+                                    <h6 class="product-item_title">{{ item.name }}</h6>
+                                    <p class="product-item_quantity">{{ item.quantity }} x {{ item.attributes.friendly_price }}</p>
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <button v-on:click="decQuantity(item.id)" :value="item.id" class="page-link" tabindex="-1">
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                        </li>
+                                        <li class="page-item">
+                                            <button v-on:click="incQuantity(item.id)" :value="item.id" class="page-link">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </li>
+                                        <li class="page-item">
+                                            <button v-on:click="remove(item.id)" :value="item.id" class="page-link">
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="totalPrices" v-cloak>
+                            <div class="card card-stats mb-4 mb-xl-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <span v-if="totalPrice==0">Cart is empty!</span>
+                                            <span v-if="totalPrice"><strong>Subtotal:</strong></span>
+                                            <span v-if="totalPrice" class="ammount"><strong>{{ totalPriceFormat }}</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div v-if="totalPrice" v-cloak>
+                                <a href="/cart-checkout" class="btn btn-primary text-white">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row align-items-center justify-content-md-between">
+                    <div class="col-md-6">
+                        <div class="copyright">
+                            &copy; 2020 <a href="" target="_blank">QR Menu Maker</a>.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul id="footer-pages" class="nav nav-footer justify-content-end">
+                            <li v-for="page in pages" class="nav-item" v-cloak>
+                                <a :href="'/pages/' + page.id" class="nav-link">{{ page.title }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--   Core JS Files   -->
+    <script src="~/Content/JS/jquery.min.js" type="text/javascript"></script>
+    <script src="~/Content/JS/popper.min.js"></script>
+    <script src="~/Content/JS/perfect-scrollbar.jquery.min.js"></script>
+    <script src="~/Content/JS/bootstrap.min.js"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="~/Content/JS/bootstrap-switch.js"></script>
+
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="~/Content/JS/moment.min.js"></script>
+    <script src="~/Content/JS/nouislider.min.js"></script>
+    <script src="~/Content/JS/datetimepicker.js"></script>
+    <script src="~/Content/JS/bootstrap-datepicker.min.js"></script>
+
+    <!-- Control Center for Argon UI Kit: parallax effects, scripts for the example pages etc -->
+    <script src="~/Content/JS/argon-design-system.js"></script>
+
+    <!-- Import Vue -->
+    <script src="~/Content/JS/vue.js"></script>
+    <!-- Import AXIOS --->
+    <script src="~/Content/JS/axios.min.js"></script>
+
+    <!-- Add to Cart   -->
+    <script>
+        var LOCALE = "en";
+        var CASHIER_CURRENCY = "eur";
+    </script>
+
+
+    <!-- Cart custom sidemenu -->
+    <script src="~/Content/JS/cartSideMenu.js"></script>
+    <!-- Notify JS -->
+    <script src="~/Content/JS/notify.min.js"></script>
+
+    <!-- SELECT2 -->
+    <script src="~/Content/JS/select2.js"></script>
+    <script src="~/Content/JS/select2.min.js"></script>
+
+    <!-- Google Map -->
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?libraries=geometry,drawing&key=">
+    </script>
+
+    <script>
+        "use strict";
+        var items = [];
+        var currentItem = null;
+        var currentItemSelectedPrice = null;
+        var lastAdded = null;
+        var previouslySelected = [];
+        var extrasSelected = [];
+        var variantID = null;
+        var CASHIER_CURRENCY = "eur";
+        var LOCALE = "en";
+
+        /*
+        * Price formater
+        * param  {Nummber} price
+        */
+        function formatPrice(price) {
+            var formatter = new Intl.NumberFormat(LOCALE, {
+                style: 'currency',
+                currency: CASHIER_CURRENCY,
+            });
+
+            var formated = formatter.format(price);
+
+            return formated;
+        }
+
+        /**
+         * Load extras for variant
+         * param  {Number} variant_id the variant id
+         * */
+        function loadExtras(variant_id) {
+            //alert("Load extras for "+variant_id);
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            $.ajax({
+                type: 'GET',
+                url: '/items/variants/' + variant_id + '/extras',
+                success: function (response) {
+                    if (response.status) {
+                        response.data.forEach(element => {
+                            $('#exrtas-area-inside').append('<div class="custom-control custom-checkbox mb-3"><input onclick="recalculatePrice(' + element.item_id + ');" class="custom-control-input" id="' + element.id + '" name="extra"  value="' + element.price + '" type="checkbox"><label class="custom-control-label" for="' + element.id + '">' + element.name + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+' + formatPrice(element.price) + '</label></div>');
+                        });
+                        $('#exrtas-area').show();
+
+                    }
+                }, error: function (response) {
+                    //return callback(false, response.responseJSON.errMsg);
+                }
+            })
+        }
+
+
+
+
+        /**
+         *
+         * Set the selected variant, set price and shows qty area and calls load extras
+         * */
+        function setSelectedVariant(element) {
+
+            //console.log(formated);
+            $('#modalPrice').html(formatPrice(element.price));
+
+            //Set current item price
+            currentItemSelectedPrice = element.price;
+
+            //Show QTY
+            $('.quantity-area').show();
+
+            //Set variantID
+            variantID = element.id;
+
+            //Empty the extras, and call it
+            $('#exrtas-area-inside').empty();
+            loadExtras(variantID);
+
+        }
+
+        function getTheDataForTheFoundVariable() {
+            console.log(previouslySelected);
+            var comparableObject = {};
+            previouslySelected.forEach(element => {
+                comparableObject[element.option_id] = element.name.trim().toLowerCase().replace(/\s/g, "-");
+            });
+            comparableObject = JSON.stringify(comparableObject)
+            currentItem['variants'].forEach(element => {
+                if (comparableObject == element.options) {
+                    console.log(element.options);
+                    setSelectedVariant(element);
+                }
+            });
+
+        }
+
+
+        function checkIfVariableExists(forOption, optionValue) {
+
+            var newElement = { "option_id": forOption, "name": optionValue };
+            console.log('NEW ELEMNGT');
+            console.log(newElement);
+
+            var possibleSelection = JSON.parse(JSON.stringify(previouslySelected));
+            possibleSelection.push(newElement);
+            console.log(possibleSelection);
+
+            var filteredObjects = [];
+            //possibleSelection.forEach(element => {
+            currentItem.variants.forEach(theVariant => {
+                var theOptions = JSON.parse(theVariant.options);
+                var ok = true;
+                Object.keys(theOptions).map((key) => {
+
+                    console.log(key + " : " + theOptions[key])
+                    possibleSelection.forEach(element => {
+                        if (key == element.option_id) {
+                            if (theOptions[key] + "" != element.name.trim().toLowerCase().replace(/\s/g, "-") + "") {
+                                ok = false;
+                            }
+                        }
+                    });
+
+                })
+
+                if (ok) {
+                    filteredObjects.push(theVariant);
+                    console.log("ok")
+                } else {
+                    console.log("not ok")
+                }
+
+                //comparableObject[element.option_id]=element.name.trim().toLowerCase().replace(/\s/g , "-");
+            });
+
+            //});
+
+
+            return filteredObjects.length > 0;
+
+        }
+
+        function appendOption(name, id) {
+            lastAdded = id;
+            $('#variants-area-inside').append('<div id="variants-area-' + id + '"><br /><label class="form-control-label"><b>' + name + '<b></label><div><div id="variants-area-inside-' + id + '" class="btn-group btn-group-toggle" data-toggle="buttons"> </div></div>');
+        }
+
+        function optionChanged(option_id, name) {
+
+            var newElement = { "option_id": option_id, "name": name };
+
+            //If this option is already in the select, then it means it is old
+            var tempObj = [];
+            var wasOld = false;
+            if (previouslySelected.length > 0) {
+                previouslySelected.forEach(element => {
+                    if (!wasOld) {
+                        if (element.option_id == option_id) {
+                            //This is old select, remove any new
+                            tempObj.push(newElement);
+                            wasOld = true;
+                        } else {
+                            tempObj.push(element);
+                        }
+                    } else {
+                        //When rest, from the old one, remove the object
+                        $("#variants-area-" + element.option_id).remove();
+                    }
+
+                });
+            }
+
+            if (wasOld) {
+                previouslySelected = tempObj;
+                //remove also last inserted, and readded it
+                $("#variants-area-" + lastAdded).remove();
+            } else {
+                previouslySelected.push(newElement);
+            }
+            setVariants();
+
+
+        }
+
+        function appendOptionValue(name, enabled, option_id) {
+            $('#variants-area-inside-' + option_id).append('<label style="opacity: ' + (enabled ? 1 : 0.5) + '" class="btn btn-outline-primary"><input  onchange="optionChanged(' + option_id + ',\'' + name + '\')"  ' + (enabled ? "" : "disabled") + ' type="radio" name="option_' + option_id + '" value="option_' + option_id + "_" + name + '" autocomplete="off" />' + name + '</label>')
+        }
+
+        function setVariants() {
+            //1. Determine previously selected variants
+            // var previouslySelected=[];
+
+            //HIDE QTY
+            $('.quantity-area').hide();
+            $('#exrtas-area-inside').empty();
+            $('#exrtas-area').hide();
+
+            //2. Get the new option to show
+            var newOptionToShow = null;
+            console.log(currentItem.options[previouslySelected.length]);
+            newOptionToShow = currentItem.options[previouslySelected.length];
+
+            if (newOptionToShow != undefined) {
+                //2.1 Add the options in the table
+                appendOption(newOptionToShow.name, newOptionToShow.id);
+
+                newOptionToShow.options.split(",").forEach(element => {
+                    if (checkIfVariableExists(newOptionToShow.id, element)) {
+                        //Next variable exists
+                        console.log("Exists: " + element);
+                        appendOptionValue(element, true, newOptionToShow.id);
+                    } else {
+                        //Vsaraiable with the next option value doens't exists
+                        console.log("Does not exists: " + element);
+                        appendOptionValue(element, false, newOptionToShow.id);
+                    }
+
+
+                });
+            } else {
+                console.log("No more options");
+                getTheDataForTheFoundVariable();
+            }
+
+
+
+
+            //3. Add the new option options
+            //3.1 If new option is null, show the variant price
+        }
+
+
+        function setCurrentItem(id) {
+
+
+            var item = items[id];
+            currentItem = item;
+            previouslySelected = [];
+            $('#modalTitle').text(item.name);
+            $('#modalName').text(item.name);
+            $('#modalPrice').html(item.price);
+            $('#modalID').text(item.id);
+            $("#modalImg").attr("src", item.image);
+            $('#modalDescription').html(item.description);
+
+
+            if (item.has_variants) {
+                //Vith variants
+                //Hide the counter, and extrasts
+                $('.quantity-area').hide();
+
+                //Now show the variants options
+                $('#variants-area-inside').empty();
+                $('#variants-area').show();
+                setVariants();
+                //$('#modalPrice').html("dynamic");
+
+
+
+
+            } else {
+                //Normal
+                currentItemSelectedPrice = item.priceNotFormated;
+                $('#variants-area').hide();
+                $('.quantity-area').show();
+            }
+
+
+            $('#productModal').modal('show');
+
+            extrasSelected = [];
+
+            //Now set the extrast
+            if (item.extras.length == 0 || item.has_variants) {
+                console.log('has no extras');
+                $('#exrtas-area-inside').empty();
+                $('#exrtas-area').hide();
+            } else {
+                console.log('has extras');
+                $('#exrtas-area-inside').empty();
+                item.extras.forEach(element => {
+                    console.log(element);
+                    $('#exrtas-area-inside').append('<div class="custom-control custom-checkbox mb-3"><input onclick="recalculatePrice(' + id + ');" class="custom-control-input" id="' + element.id + '" name="extra"  value="' + element.price + '" type="checkbox"><label class="custom-control-label" for="' + element.id + '">' + element.name + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+' + element.priceFormated + '</label></div>');
+                });
+                $('#exrtas-area').show();
+            }
+        }
+
+        function recalculatePrice(id, value) {
+            //console.log("Triger price recalculation: "+id);
+            // console.log(items[id]);
+            var mainPrice = parseFloat(currentItemSelectedPrice);
+            extrasSelected = [];
+
+            //Get the selected check boxes
+            $.each($("input[name='extra']:checked"), function () {
+                mainPrice += parseFloat(($(this).val() + ""));
+                extrasSelected.push($(this).attr('id'));
+            });
+            $('#modalPrice').html(formatPrice(mainPrice));
+
+        }
+        items[1] = { "name": "Caprese Salad (350gr)", "id": 1, "priceNotFormated": 9.99, "price": "\u20ac9,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/bd5292e7-e898-479d-8921-4c47a776ba82_large.jpg", "extras": [{ "id": 1, "item_id": 1, "price": 1.2, "name": "Extra cheese", "created_at": "2020-12-16 12:12:14", "updated_at": "2020-12-16 12:12:14", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,20" }, { "id": 2, "item_id": 1, "price": 0.3, "name": "Extra olives", "created_at": "2020-12-16 12:12:15", "updated_at": "2020-12-16 12:12:15", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,30" }, { "id": 3, "item_id": 1, "price": 1.5, "name": "Tuna", "created_at": "2020-12-16 12:12:15", "updated_at": "2020-12-16 12:12:15", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,50" }], "options": [], "variants": [], "has_variants": false, "description": "peeled tomatoes, mozzarella salad, Genovese pesto" }; items[2] = { "name": "Caesar Salad (400g)", "id": 2, "priceNotFormated": 10.99, "price": "\u20ac10,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/25ed56dc-45cc-473f-ad00-d4b449acc71a_large.jpg", "extras": [{ "id": 4, "item_id": 2, "price": 1.2, "name": "Extra cheese", "created_at": "2020-12-16 12:12:15", "updated_at": "2020-12-16 12:12:15", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,20" }, { "id": 5, "item_id": 2, "price": 0.3, "name": "Extra olives", "created_at": "2020-12-16 12:12:15", "updated_at": "2020-12-16 12:12:15", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,30" }, { "id": 6, "item_id": 2, "price": 1.5, "name": "Tuna", "created_at": "2020-12-16 12:12:15", "updated_at": "2020-12-16 12:12:15", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,50" }], "options": [], "variants": [], "has_variants": false, "description": "iceberg, bacon, chicken breast, parmesan, Caesar sauce" }; items[3] = { "name": "Salad Napoli (350g)", "id": 3, "priceNotFormated": 9.99, "price": "\u20ac9,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/93641a19-dba6-4010-a852-0e88da83a01f_large.jpg", "extras": [{ "id": 7, "item_id": 3, "price": 1.2, "name": "Extra cheese", "created_at": "2020-12-16 12:12:15", "updated_at": "2020-12-16 12:12:15", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,20" }, { "id": 8, "item_id": 3, "price": 0.3, "name": "Extra olives", "created_at": "2020-12-16 12:12:15", "updated_at": "2020-12-16 12:12:15", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,30" }, { "id": 9, "item_id": 3, "price": 1.5, "name": "Tuna", "created_at": "2020-12-16 12:12:15", "updated_at": "2020-12-16 12:12:15", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,50" }], "options": [], "variants": [], "has_variants": false, "description": "iceberg, arugula, cherry tomatoes, mozzarella salad, salad dressing: (Extra Virgin olive oil, Modena balsamic vinegar, honey and mustard)" }; items[4] = { "name": "Green tuna salad (400g)", "id": 4, "priceNotFormated": 9.99, "price": "\u20ac9,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/d3379607-df34-4ed0-8f87-8bb6f73ed16d_large.jpg", "extras": [{ "id": 10, "item_id": 4, "price": 1.2, "name": "Extra cheese", "created_at": "2020-12-16 12:12:15", "updated_at": "2020-12-16 12:12:15", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,20" }, { "id": 11, "item_id": 4, "price": 0.3, "name": "Extra olives", "created_at": "2020-12-16 12:12:15", "updated_at": "2020-12-16 12:12:15", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,30" }, { "id": 12, "item_id": 4, "price": 1.5, "name": "Tuna", "created_at": "2020-12-16 12:12:16", "updated_at": "2020-12-16 12:12:16", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,50" }], "options": [], "variants": [], "has_variants": false, "description": "lettuce, cucumbers, tuna, olive, corn, lemon, salad dressing: (Extra Virgin olive oil, Modena balsamic vinegar, honey and mustard)" }; items[5] = { "name": "Green salad (350g)", "id": 5, "priceNotFormated": 7.99, "price": "\u20ac7,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/2e7eb9a6-5307-4ec7-8cf8-86490d4c2363_large.jpg", "extras": [{ "id": 13, "item_id": 5, "price": 1.2, "name": "Extra cheese", "created_at": "2020-12-16 12:12:16", "updated_at": "2020-12-16 12:12:16", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,20" }, { "id": 14, "item_id": 5, "price": 0.3, "name": "Extra olives", "created_at": "2020-12-16 12:12:16", "updated_at": "2020-12-16 12:12:16", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,30" }, { "id": 15, "item_id": 5, "price": 1.5, "name": "Tuna", "created_at": "2020-12-16 12:12:16", "updated_at": "2020-12-16 12:12:16", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,50" }], "options": [], "variants": [], "has_variants": false, "description": "lettuce, cucumbers, radishes, onions, egg, salad dressing: (Extra Virgin olive oil, Modena balsamic vinegar, honey and mustard)" }; items[6] = { "name": "Greek Salad (500g)", "id": 6, "priceNotFormated": 9.99, "price": "\u20ac9,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/f5a8b88d-9b94-44fc-9555-2f0fe043d624_large.jpg", "extras": [{ "id": 16, "item_id": 6, "price": 1.2, "name": "Extra cheese", "created_at": "2020-12-16 12:12:16", "updated_at": "2020-12-16 12:12:16", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,20" }, { "id": 17, "item_id": 6, "price": 0.3, "name": "Extra olives", "created_at": "2020-12-16 12:12:16", "updated_at": "2020-12-16 12:12:16", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,30" }, { "id": 18, "item_id": 6, "price": 1.5, "name": "Tuna", "created_at": "2020-12-16 12:12:16", "updated_at": "2020-12-16 12:12:16", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,50" }], "options": [], "variants": [], "has_variants": false, "description": "tomatoes, cucumbers, green pepper, red onion, olive, feta cheese, extra virgin olive oil" }; items[7] = { "name": "Mozzarella Pizza", "id": 7, "priceNotFormated": 10.99, "price": "\u20ac10,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/f71ae2d7-f24f-4e1b-9bdd-7ab7143ce3c8_large.jpg", "extras": [{ "id": 19, "item_id": 7, "price": 1, "name": "Olive", "created_at": "2020-12-16 12:12:16", "updated_at": "2020-12-16 12:12:16", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,00" }, { "id": 20, "item_id": 7, "price": 0.5, "name": "Mushroom", "created_at": "2020-12-16 12:12:16", "updated_at": "2020-12-16 12:12:16", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,50" }, { "id": 21, "item_id": 7, "price": 2, "name": "Peperoni", "created_at": "2020-12-16 12:12:16", "updated_at": "2020-12-16 12:12:16", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac2,00" }, { "id": 22, "item_id": 7, "price": 1, "name": "Peperoni", "created_at": "2020-12-16 12:12:16", "updated_at": "2020-12-16 12:12:16", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac1,00" }], "options": [{ "id": 1, "item_id": 7, "name": "Size", "options": "Small,Medium,Large,Family", "created_at": "2020-12-16 12:12:16", "updated_at": "2020-12-16 12:12:16", "deleted_at": null }, { "id": 2, "item_id": 7, "name": "Crust", "options": "Hand-Tosset,Thin Crust,Double Decker", "created_at": "2020-12-16 12:12:16", "updated_at": "2020-12-16 12:12:16", "deleted_at": null }], "variants": [{ "id": 1, "price": 10.99, "options": "{\"1\":\"small\",\"2\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 7, "created_at": "2020-12-16 12:12:16", "updated_at": "2020-12-16 12:12:16", "deleted_at": null }, { "id": 2, "price": 11.99, "options": "{\"1\":\"small\",\"2\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 7, "created_at": "2020-12-16 12:12:17", "updated_at": "2020-12-16 12:12:17", "deleted_at": null }, { "id": 3, "price": 12.99, "options": "{\"1\":\"small\",\"2\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 7, "created_at": "2020-12-16 12:12:17", "updated_at": "2020-12-16 12:12:17", "deleted_at": null }, { "id": 4, "price": 13.99, "options": "{\"1\":\"medium\",\"2\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 7, "created_at": "2020-12-16 12:12:17", "updated_at": "2020-12-16 12:12:17", "deleted_at": null }, { "id": 5, "price": 14.99, "options": "{\"1\":\"medium\",\"2\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 7, "created_at": "2020-12-16 12:12:17", "updated_at": "2020-12-16 12:12:17", "deleted_at": null }, { "id": 6, "price": 15.99, "options": "{\"1\":\"medium\",\"2\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 7, "created_at": "2020-12-16 12:12:17", "updated_at": "2020-12-16 12:12:17", "deleted_at": null }, { "id": 7, "price": 16.99, "options": "{\"1\":\"large\",\"2\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 7, "created_at": "2020-12-16 12:12:17", "updated_at": "2020-12-16 12:12:17", "deleted_at": null }, { "id": 8, "price": 17.99, "options": "{\"1\":\"large\",\"2\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 7, "created_at": "2020-12-16 12:12:17", "updated_at": "2020-12-16 12:12:17", "deleted_at": null }, { "id": 9, "price": 18.99, "options": "{\"1\":\"large\",\"2\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 7, "created_at": "2020-12-16 12:12:18", "updated_at": "2020-12-16 12:12:18", "deleted_at": null }, { "id": 10, "price": 19.99, "options": "{\"1\":\"family\",\"2\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 7, "created_at": "2020-12-16 12:12:18", "updated_at": "2020-12-16 12:12:18", "deleted_at": null }, { "id": 11, "price": 20.99, "options": "{\"1\":\"family\",\"2\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 7, "created_at": "2020-12-16 12:12:18", "updated_at": "2020-12-16 12:12:18", "deleted_at": null }, { "id": 12, "price": 21.99, "options": "{\"1\":\"family\",\"2\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 7, "created_at": "2020-12-16 12:12:18", "updated_at": "2020-12-16 12:12:18", "deleted_at": null }], "has_variants": true, "description": "tomato sauce, mozzarella sabelli, cherry tomatoes, olives, pesto sauce, extra virgin olive oil" }; items[8] = { "name": "Prosciutto crust pizza", "id": 8, "priceNotFormated": 14.99, "price": "\u20ac14,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/9b9886cb-5d4b-4bfe-a02a-dc3b94dae706_large.jpg", "extras": [{ "id": 23, "item_id": 8, "price": 1, "name": "Olive", "created_at": "2020-12-16 12:12:18", "updated_at": "2020-12-16 12:12:18", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,00" }, { "id": 24, "item_id": 8, "price": 0.5, "name": "Mushroom", "created_at": "2020-12-16 12:12:18", "updated_at": "2020-12-16 12:12:18", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,50" }, { "id": 25, "item_id": 8, "price": 2, "name": "Peperoni", "created_at": "2020-12-16 12:12:18", "updated_at": "2020-12-16 12:12:18", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac2,00" }, { "id": 26, "item_id": 8, "price": 1, "name": "Peperoni", "created_at": "2020-12-16 12:12:18", "updated_at": "2020-12-16 12:12:18", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac1,00" }], "options": [{ "id": 3, "item_id": 8, "name": "Size", "options": "Small,Medium,Large,Family", "created_at": "2020-12-16 12:12:18", "updated_at": "2020-12-16 12:12:18", "deleted_at": null }, { "id": 4, "item_id": 8, "name": "Crust", "options": "Hand-Tosset,Thin Crust,Double Decker", "created_at": "2020-12-16 12:12:18", "updated_at": "2020-12-16 12:12:18", "deleted_at": null }], "variants": [{ "id": 13, "price": 14.99, "options": "{\"3\":\"small\",\"4\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 8, "created_at": "2020-12-16 12:12:18", "updated_at": "2020-12-16 12:12:18", "deleted_at": null }, { "id": 14, "price": 15.99, "options": "{\"3\":\"small\",\"4\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 8, "created_at": "2020-12-16 12:12:18", "updated_at": "2020-12-16 12:12:18", "deleted_at": null }, { "id": 15, "price": 16.99, "options": "{\"3\":\"small\",\"4\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 8, "created_at": "2020-12-16 12:12:19", "updated_at": "2020-12-16 12:12:19", "deleted_at": null }, { "id": 16, "price": 17.99, "options": "{\"3\":\"medium\",\"4\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 8, "created_at": "2020-12-16 12:12:19", "updated_at": "2020-12-16 12:12:19", "deleted_at": null }, { "id": 17, "price": 18.99, "options": "{\"3\":\"medium\",\"4\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 8, "created_at": "2020-12-16 12:12:19", "updated_at": "2020-12-16 12:12:19", "deleted_at": null }, { "id": 18, "price": 19.99, "options": "{\"3\":\"medium\",\"4\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 8, "created_at": "2020-12-16 12:12:19", "updated_at": "2020-12-16 12:12:19", "deleted_at": null }, { "id": 19, "price": 20.99, "options": "{\"3\":\"large\",\"4\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 8, "created_at": "2020-12-16 12:12:19", "updated_at": "2020-12-16 12:12:19", "deleted_at": null }, { "id": 20, "price": 21.99, "options": "{\"3\":\"large\",\"4\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 8, "created_at": "2020-12-16 12:12:19", "updated_at": "2020-12-16 12:12:19", "deleted_at": null }, { "id": 21, "price": 22.99, "options": "{\"3\":\"large\",\"4\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 8, "created_at": "2020-12-16 12:12:19", "updated_at": "2020-12-16 12:12:19", "deleted_at": null }, { "id": 22, "price": 23.99, "options": "{\"3\":\"family\",\"4\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 8, "created_at": "2020-12-16 12:12:19", "updated_at": "2020-12-16 12:12:19", "deleted_at": null }, { "id": 23, "price": 24.99, "options": "{\"3\":\"family\",\"4\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 8, "created_at": "2020-12-16 12:12:19", "updated_at": "2020-12-16 12:12:19", "deleted_at": null }, { "id": 24, "price": 25.99, "options": "{\"3\":\"family\",\"4\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 8, "created_at": "2020-12-16 12:12:19", "updated_at": "2020-12-16 12:12:19", "deleted_at": null }], "has_variants": true, "description": "tomato sauce, mozzarella sabelli, prosciutto, arugula, extra virgin olive oil" }; items[9] = { "name": "Pepperoni Pizza", "id": 9, "priceNotFormated": 14.99, "price": "\u20ac14,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/4b26647d-52b8-43c5-8b62-708c99252c24_large.jpg", "extras": [{ "id": 27, "item_id": 9, "price": 1, "name": "Olive", "created_at": "2020-12-16 12:12:20", "updated_at": "2020-12-16 12:12:20", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,00" }, { "id": 28, "item_id": 9, "price": 0.5, "name": "Mushroom", "created_at": "2020-12-16 12:12:20", "updated_at": "2020-12-16 12:12:20", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,50" }, { "id": 29, "item_id": 9, "price": 2, "name": "Peperoni", "created_at": "2020-12-16 12:12:20", "updated_at": "2020-12-16 12:12:20", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac2,00" }, { "id": 30, "item_id": 9, "price": 1, "name": "Peperoni", "created_at": "2020-12-16 12:12:20", "updated_at": "2020-12-16 12:12:20", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac1,00" }], "options": [{ "id": 5, "item_id": 9, "name": "Size", "options": "Small,Medium,Large,Family", "created_at": "2020-12-16 12:12:20", "updated_at": "2020-12-16 12:12:20", "deleted_at": null }, { "id": 6, "item_id": 9, "name": "Crust", "options": "Hand-Tosset,Thin Crust,Double Decker", "created_at": "2020-12-16 12:12:20", "updated_at": "2020-12-16 12:12:20", "deleted_at": null }], "variants": [{ "id": 25, "price": 14.99, "options": "{\"5\":\"small\",\"6\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 9, "created_at": "2020-12-16 12:12:20", "updated_at": "2020-12-16 12:12:20", "deleted_at": null }, { "id": 26, "price": 15.99, "options": "{\"5\":\"small\",\"6\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 9, "created_at": "2020-12-16 12:12:20", "updated_at": "2020-12-16 12:12:20", "deleted_at": null }, { "id": 27, "price": 16.99, "options": "{\"5\":\"small\",\"6\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 9, "created_at": "2020-12-16 12:12:21", "updated_at": "2020-12-16 12:12:21", "deleted_at": null }, { "id": 28, "price": 17.99, "options": "{\"5\":\"medium\",\"6\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 9, "created_at": "2020-12-16 12:12:21", "updated_at": "2020-12-16 12:12:21", "deleted_at": null }, { "id": 29, "price": 18.99, "options": "{\"5\":\"medium\",\"6\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 9, "created_at": "2020-12-16 12:12:21", "updated_at": "2020-12-16 12:12:21", "deleted_at": null }, { "id": 30, "price": 19.99, "options": "{\"5\":\"medium\",\"6\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 9, "created_at": "2020-12-16 12:12:21", "updated_at": "2020-12-16 12:12:21", "deleted_at": null }, { "id": 31, "price": 20.99, "options": "{\"5\":\"large\",\"6\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 9, "created_at": "2020-12-16 12:12:21", "updated_at": "2020-12-16 12:12:21", "deleted_at": null }, { "id": 32, "price": 21.99, "options": "{\"5\":\"large\",\"6\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 9, "created_at": "2020-12-16 12:12:21", "updated_at": "2020-12-16 12:12:21", "deleted_at": null }, { "id": 33, "price": 22.99, "options": "{\"5\":\"large\",\"6\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 9, "created_at": "2020-12-16 12:12:21", "updated_at": "2020-12-16 12:12:21", "deleted_at": null }, { "id": 34, "price": 23.99, "options": "{\"5\":\"family\",\"6\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 9, "created_at": "2020-12-16 12:12:21", "updated_at": "2020-12-16 12:12:21", "deleted_at": null }, { "id": 35, "price": 24.99, "options": "{\"5\":\"family\",\"6\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 9, "created_at": "2020-12-16 12:12:21", "updated_at": "2020-12-16 12:12:21", "deleted_at": null }, { "id": 36, "price": 25.99, "options": "{\"5\":\"family\",\"6\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 9, "created_at": "2020-12-16 12:12:21", "updated_at": "2020-12-16 12:12:21", "deleted_at": null }], "has_variants": true, "description": "tomato sauce, mozzarella Sabelli, Calabro salad (spicy), extra virgin olive oil" }; items[10] = { "name": "Carriola Pizza", "id": 10, "priceNotFormated": 14.99, "price": "\u20ac14,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/e1e5559a-ca6d-4a34-80c6-b72c31d97d96_large.jpg", "extras": [{ "id": 31, "item_id": 10, "price": 1, "name": "Olive", "created_at": "2020-12-16 12:12:22", "updated_at": "2020-12-16 12:12:22", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,00" }, { "id": 32, "item_id": 10, "price": 0.5, "name": "Mushroom", "created_at": "2020-12-16 12:12:22", "updated_at": "2020-12-16 12:12:22", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,50" }, { "id": 33, "item_id": 10, "price": 2, "name": "Peperoni", "created_at": "2020-12-16 12:12:22", "updated_at": "2020-12-16 12:12:22", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac2,00" }, { "id": 34, "item_id": 10, "price": 1, "name": "Peperoni", "created_at": "2020-12-16 12:12:22", "updated_at": "2020-12-16 12:12:22", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac1,00" }], "options": [{ "id": 7, "item_id": 10, "name": "Size", "options": "Small,Medium,Large,Family", "created_at": "2020-12-16 12:12:22", "updated_at": "2020-12-16 12:12:22", "deleted_at": null }, { "id": 8, "item_id": 10, "name": "Crust", "options": "Hand-Tosset,Thin Crust,Double Decker", "created_at": "2020-12-16 12:12:22", "updated_at": "2020-12-16 12:12:22", "deleted_at": null }], "variants": [{ "id": 37, "price": 14.99, "options": "{\"7\":\"small\",\"8\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 10, "created_at": "2020-12-16 12:12:22", "updated_at": "2020-12-16 12:12:22", "deleted_at": null }, { "id": 38, "price": 15.99, "options": "{\"7\":\"small\",\"8\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 10, "created_at": "2020-12-16 12:12:22", "updated_at": "2020-12-16 12:12:22", "deleted_at": null }, { "id": 39, "price": 16.99, "options": "{\"7\":\"small\",\"8\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 10, "created_at": "2020-12-16 12:12:22", "updated_at": "2020-12-16 12:12:22", "deleted_at": null }, { "id": 40, "price": 17.99, "options": "{\"7\":\"medium\",\"8\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 10, "created_at": "2020-12-16 12:12:22", "updated_at": "2020-12-16 12:12:22", "deleted_at": null }, { "id": 41, "price": 18.99, "options": "{\"7\":\"medium\",\"8\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 10, "created_at": "2020-12-16 12:12:22", "updated_at": "2020-12-16 12:12:22", "deleted_at": null }, { "id": 42, "price": 19.99, "options": "{\"7\":\"medium\",\"8\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 10, "created_at": "2020-12-16 12:12:22", "updated_at": "2020-12-16 12:12:22", "deleted_at": null }, { "id": 43, "price": 20.99, "options": "{\"7\":\"large\",\"8\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 10, "created_at": "2020-12-16 12:12:22", "updated_at": "2020-12-16 12:12:22", "deleted_at": null }, { "id": 44, "price": 21.99, "options": "{\"7\":\"large\",\"8\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 10, "created_at": "2020-12-16 12:12:23", "updated_at": "2020-12-16 12:12:23", "deleted_at": null }, { "id": 45, "price": 22.99, "options": "{\"7\":\"large\",\"8\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 10, "created_at": "2020-12-16 12:12:23", "updated_at": "2020-12-16 12:12:23", "deleted_at": null }, { "id": 46, "price": 23.99, "options": "{\"7\":\"family\",\"8\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 10, "created_at": "2020-12-16 12:12:23", "updated_at": "2020-12-16 12:12:23", "deleted_at": null }, { "id": 47, "price": 24.99, "options": "{\"7\":\"family\",\"8\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 10, "created_at": "2020-12-16 12:12:23", "updated_at": "2020-12-16 12:12:23", "deleted_at": null }, { "id": 48, "price": 25.99, "options": "{\"7\":\"family\",\"8\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 10, "created_at": "2020-12-16 12:12:23", "updated_at": "2020-12-16 12:12:23", "deleted_at": null }], "has_variants": true, "description": "tomato sauce, mozzarella sabelli, bacon, red onion, olives, extra virgin olive oil" }; items[11] = { "name": "Perugia Pizza", "id": 11, "priceNotFormated": 14.99, "price": "\u20ac14,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/a8e8c22a-84cd-48d0-971a-2c98e695e387_large.jpg", "extras": [{ "id": 35, "item_id": 11, "price": 1, "name": "Olive", "created_at": "2020-12-16 12:12:23", "updated_at": "2020-12-16 12:12:23", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,00" }, { "id": 36, "item_id": 11, "price": 0.5, "name": "Mushroom", "created_at": "2020-12-16 12:12:23", "updated_at": "2020-12-16 12:12:23", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,50" }, { "id": 37, "item_id": 11, "price": 2, "name": "Peperoni", "created_at": "2020-12-16 12:12:23", "updated_at": "2020-12-16 12:12:23", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac2,00" }, { "id": 38, "item_id": 11, "price": 1, "name": "Peperoni", "created_at": "2020-12-16 12:12:23", "updated_at": "2020-12-16 12:12:23", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac1,00" }], "options": [{ "id": 9, "item_id": 11, "name": "Size", "options": "Small,Medium,Large,Family", "created_at": "2020-12-16 12:12:24", "updated_at": "2020-12-16 12:12:24", "deleted_at": null }, { "id": 10, "item_id": 11, "name": "Crust", "options": "Hand-Tosset,Thin Crust,Double Decker", "created_at": "2020-12-16 12:12:24", "updated_at": "2020-12-16 12:12:24", "deleted_at": null }], "variants": [{ "id": 49, "price": 14.99, "options": "{\"9\":\"small\",\"10\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 11, "created_at": "2020-12-16 12:12:24", "updated_at": "2020-12-16 12:12:24", "deleted_at": null }, { "id": 50, "price": 15.99, "options": "{\"9\":\"small\",\"10\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 11, "created_at": "2020-12-16 12:12:24", "updated_at": "2020-12-16 12:12:24", "deleted_at": null }, { "id": 51, "price": 16.99, "options": "{\"9\":\"small\",\"10\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 11, "created_at": "2020-12-16 12:12:24", "updated_at": "2020-12-16 12:12:24", "deleted_at": null }, { "id": 52, "price": 17.99, "options": "{\"9\":\"medium\",\"10\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 11, "created_at": "2020-12-16 12:12:24", "updated_at": "2020-12-16 12:12:24", "deleted_at": null }, { "id": 53, "price": 18.99, "options": "{\"9\":\"medium\",\"10\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 11, "created_at": "2020-12-16 12:12:24", "updated_at": "2020-12-16 12:12:24", "deleted_at": null }, { "id": 54, "price": 19.99, "options": "{\"9\":\"medium\",\"10\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 11, "created_at": "2020-12-16 12:12:24", "updated_at": "2020-12-16 12:12:24", "deleted_at": null }, { "id": 55, "price": 20.99, "options": "{\"9\":\"large\",\"10\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 11, "created_at": "2020-12-16 12:12:24", "updated_at": "2020-12-16 12:12:24", "deleted_at": null }, { "id": 56, "price": 21.99, "options": "{\"9\":\"large\",\"10\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 11, "created_at": "2020-12-16 12:12:25", "updated_at": "2020-12-16 12:12:25", "deleted_at": null }, { "id": 57, "price": 22.99, "options": "{\"9\":\"large\",\"10\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 11, "created_at": "2020-12-16 12:12:25", "updated_at": "2020-12-16 12:12:25", "deleted_at": null }, { "id": 58, "price": 23.99, "options": "{\"9\":\"family\",\"10\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 11, "created_at": "2020-12-16 12:12:25", "updated_at": "2020-12-16 12:12:25", "deleted_at": null }, { "id": 59, "price": 24.99, "options": "{\"9\":\"family\",\"10\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 11, "created_at": "2020-12-16 12:12:25", "updated_at": "2020-12-16 12:12:25", "deleted_at": null }, { "id": 60, "price": 25.99, "options": "{\"9\":\"family\",\"10\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 11, "created_at": "2020-12-16 12:12:25", "updated_at": "2020-12-16 12:12:25", "deleted_at": null }], "has_variants": true, "description": "tomato sauce, mozzarella sabelli, chicken fillet, red onion, fresh peppers, extra virgin olive oil" }; items[12] = { "name": "Pizza Napoli", "id": 12, "priceNotFormated": 14.99, "price": "\u20ac14,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/5c8fa7eb-bc11-42e1-a1a5-ffb0b3d7a6b7_large.jpg", "extras": [{ "id": 39, "item_id": 12, "price": 1, "name": "Olive", "created_at": "2020-12-16 12:12:25", "updated_at": "2020-12-16 12:12:25", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,00" }, { "id": 40, "item_id": 12, "price": 0.5, "name": "Mushroom", "created_at": "2020-12-16 12:12:25", "updated_at": "2020-12-16 12:12:25", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,50" }, { "id": 41, "item_id": 12, "price": 2, "name": "Peperoni", "created_at": "2020-12-16 12:12:25", "updated_at": "2020-12-16 12:12:25", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac2,00" }, { "id": 42, "item_id": 12, "price": 1, "name": "Peperoni", "created_at": "2020-12-16 12:12:25", "updated_at": "2020-12-16 12:12:25", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac1,00" }], "options": [{ "id": 11, "item_id": 12, "name": "Size", "options": "Small,Medium,Large,Family", "created_at": "2020-12-16 12:12:25", "updated_at": "2020-12-16 12:12:25", "deleted_at": null }, { "id": 12, "item_id": 12, "name": "Crust", "options": "Hand-Tosset,Thin Crust,Double Decker", "created_at": "2020-12-16 12:12:25", "updated_at": "2020-12-16 12:12:25", "deleted_at": null }], "variants": [{ "id": 61, "price": 14.99, "options": "{\"11\":\"small\",\"12\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 12, "created_at": "2020-12-16 12:12:25", "updated_at": "2020-12-16 12:12:25", "deleted_at": null }, { "id": 62, "price": 15.99, "options": "{\"11\":\"small\",\"12\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 12, "created_at": "2020-12-16 12:12:25", "updated_at": "2020-12-16 12:12:25", "deleted_at": null }, { "id": 63, "price": 16.99, "options": "{\"11\":\"small\",\"12\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 12, "created_at": "2020-12-16 12:12:26", "updated_at": "2020-12-16 12:12:26", "deleted_at": null }, { "id": 64, "price": 17.99, "options": "{\"11\":\"medium\",\"12\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 12, "created_at": "2020-12-16 12:12:26", "updated_at": "2020-12-16 12:12:26", "deleted_at": null }, { "id": 65, "price": 18.99, "options": "{\"11\":\"medium\",\"12\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 12, "created_at": "2020-12-16 12:12:26", "updated_at": "2020-12-16 12:12:26", "deleted_at": null }, { "id": 66, "price": 19.99, "options": "{\"11\":\"medium\",\"12\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 12, "created_at": "2020-12-16 12:12:26", "updated_at": "2020-12-16 12:12:26", "deleted_at": null }, { "id": 67, "price": 20.99, "options": "{\"11\":\"large\",\"12\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 12, "created_at": "2020-12-16 12:12:26", "updated_at": "2020-12-16 12:12:26", "deleted_at": null }, { "id": 68, "price": 21.99, "options": "{\"11\":\"large\",\"12\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 12, "created_at": "2020-12-16 12:12:26", "updated_at": "2020-12-16 12:12:26", "deleted_at": null }, { "id": 69, "price": 22.99, "options": "{\"11\":\"large\",\"12\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 12, "created_at": "2020-12-16 12:12:26", "updated_at": "2020-12-16 12:12:26", "deleted_at": null }, { "id": 70, "price": 23.99, "options": "{\"11\":\"family\",\"12\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 12, "created_at": "2020-12-16 12:12:26", "updated_at": "2020-12-16 12:12:26", "deleted_at": null }, { "id": 71, "price": 24.99, "options": "{\"11\":\"family\",\"12\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 12, "created_at": "2020-12-16 12:12:27", "updated_at": "2020-12-16 12:12:27", "deleted_at": null }, { "id": 72, "price": 25.99, "options": "{\"11\":\"family\",\"12\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 12, "created_at": "2020-12-16 12:12:27", "updated_at": "2020-12-16 12:12:27", "deleted_at": null }], "has_variants": true, "description": "tomato sauce, mozzarella sabelli, ham, cherry tomatoes, emmental, arugula, extra virgin olive oil" }; items[13] = { "name": "Margarita Pizza", "id": 13, "priceNotFormated": 10.49, "price": "\u20ac10,49", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/9d180742-9fb3-4b46-8563-8c24c9004fd3_large.jpg", "extras": [{ "id": 43, "item_id": 13, "price": 1, "name": "Olive", "created_at": "2020-12-16 12:12:27", "updated_at": "2020-12-16 12:12:27", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,00" }, { "id": 44, "item_id": 13, "price": 0.5, "name": "Mushroom", "created_at": "2020-12-16 12:12:27", "updated_at": "2020-12-16 12:12:27", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,50" }, { "id": 45, "item_id": 13, "price": 2, "name": "Peperoni", "created_at": "2020-12-16 12:12:27", "updated_at": "2020-12-16 12:12:27", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac2,00" }, { "id": 46, "item_id": 13, "price": 1, "name": "Peperoni", "created_at": "2020-12-16 12:12:27", "updated_at": "2020-12-16 12:12:27", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac1,00" }], "options": [{ "id": 13, "item_id": 13, "name": "Size", "options": "Small,Medium,Large,Family", "created_at": "2020-12-16 12:12:27", "updated_at": "2020-12-16 12:12:27", "deleted_at": null }, { "id": 14, "item_id": 13, "name": "Crust", "options": "Hand-Tosset,Thin Crust,Double Decker", "created_at": "2020-12-16 12:12:27", "updated_at": "2020-12-16 12:12:27", "deleted_at": null }], "variants": [{ "id": 73, "price": 10.49, "options": "{\"13\":\"small\",\"14\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 13, "created_at": "2020-12-16 12:12:27", "updated_at": "2020-12-16 12:12:27", "deleted_at": null }, { "id": 74, "price": 11.49, "options": "{\"13\":\"small\",\"14\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 13, "created_at": "2020-12-16 12:12:27", "updated_at": "2020-12-16 12:12:27", "deleted_at": null }, { "id": 75, "price": 12.49, "options": "{\"13\":\"small\",\"14\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 13, "created_at": "2020-12-16 12:12:27", "updated_at": "2020-12-16 12:12:27", "deleted_at": null }, { "id": 76, "price": 13.49, "options": "{\"13\":\"medium\",\"14\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 13, "created_at": "2020-12-16 12:12:27", "updated_at": "2020-12-16 12:12:27", "deleted_at": null }, { "id": 77, "price": 14.49, "options": "{\"13\":\"medium\",\"14\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 13, "created_at": "2020-12-16 12:12:27", "updated_at": "2020-12-16 12:12:27", "deleted_at": null }, { "id": 78, "price": 15.49, "options": "{\"13\":\"medium\",\"14\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 13, "created_at": "2020-12-16 12:12:27", "updated_at": "2020-12-16 12:12:27", "deleted_at": null }, { "id": 79, "price": 16.49, "options": "{\"13\":\"large\",\"14\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 13, "created_at": "2020-12-16 12:12:28", "updated_at": "2020-12-16 12:12:28", "deleted_at": null }, { "id": 80, "price": 17.49, "options": "{\"13\":\"large\",\"14\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 13, "created_at": "2020-12-16 12:12:28", "updated_at": "2020-12-16 12:12:28", "deleted_at": null }, { "id": 81, "price": 18.49, "options": "{\"13\":\"large\",\"14\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 13, "created_at": "2020-12-16 12:12:28", "updated_at": "2020-12-16 12:12:28", "deleted_at": null }, { "id": 82, "price": 19.49, "options": "{\"13\":\"family\",\"14\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 13, "created_at": "2020-12-16 12:12:28", "updated_at": "2020-12-16 12:12:28", "deleted_at": null }, { "id": 83, "price": 20.49, "options": "{\"13\":\"family\",\"14\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 13, "created_at": "2020-12-16 12:12:28", "updated_at": "2020-12-16 12:12:28", "deleted_at": null }, { "id": 84, "price": 21.49, "options": "{\"13\":\"family\",\"14\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 13, "created_at": "2020-12-16 12:12:28", "updated_at": "2020-12-16 12:12:28", "deleted_at": null }], "has_variants": true, "description": "tomato sauce, mozzarella Sabelli, extra virgin olive oil" }; items[14] = { "name": "Combo Pizza 50\/50 (70cm)", "id": 14, "priceNotFormated": 39.99, "price": "\u20ac39,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/cb7372d0-73a8-4551-bc31-22035d9551c4_large.jpg", "extras": [{ "id": 47, "item_id": 14, "price": 1, "name": "Olive", "created_at": "2020-12-16 12:12:28", "updated_at": "2020-12-16 12:12:28", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,00" }, { "id": 48, "item_id": 14, "price": 0.5, "name": "Mushroom", "created_at": "2020-12-16 12:12:28", "updated_at": "2020-12-16 12:12:28", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,50" }, { "id": 49, "item_id": 14, "price": 2, "name": "Peperoni", "created_at": "2020-12-16 12:12:28", "updated_at": "2020-12-16 12:12:28", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac2,00" }, { "id": 50, "item_id": 14, "price": 1, "name": "Peperoni", "created_at": "2020-12-16 12:12:28", "updated_at": "2020-12-16 12:12:28", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac1,00" }], "options": [{ "id": 15, "item_id": 14, "name": "Size", "options": "Small,Medium,Large,Family", "created_at": "2020-12-16 12:12:28", "updated_at": "2020-12-16 12:12:28", "deleted_at": null }, { "id": 16, "item_id": 14, "name": "Crust", "options": "Hand-Tosset,Thin Crust,Double Decker", "created_at": "2020-12-16 12:12:28", "updated_at": "2020-12-16 12:12:28", "deleted_at": null }], "variants": [{ "id": 85, "price": 39.99, "options": "{\"15\":\"small\",\"16\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 14, "created_at": "2020-12-16 12:12:28", "updated_at": "2020-12-16 12:12:28", "deleted_at": null }, { "id": 86, "price": 40.99, "options": "{\"15\":\"small\",\"16\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 14, "created_at": "2020-12-16 12:12:28", "updated_at": "2020-12-16 12:12:28", "deleted_at": null }, { "id": 87, "price": 41.99, "options": "{\"15\":\"small\",\"16\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 14, "created_at": "2020-12-16 12:12:29", "updated_at": "2020-12-16 12:12:29", "deleted_at": null }, { "id": 88, "price": 42.99, "options": "{\"15\":\"medium\",\"16\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 14, "created_at": "2020-12-16 12:12:29", "updated_at": "2020-12-16 12:12:29", "deleted_at": null }, { "id": 89, "price": 43.99, "options": "{\"15\":\"medium\",\"16\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 14, "created_at": "2020-12-16 12:12:29", "updated_at": "2020-12-16 12:12:29", "deleted_at": null }, { "id": 90, "price": 44.99, "options": "{\"15\":\"medium\",\"16\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 14, "created_at": "2020-12-16 12:12:29", "updated_at": "2020-12-16 12:12:29", "deleted_at": null }, { "id": 91, "price": 45.99, "options": "{\"15\":\"large\",\"16\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 14, "created_at": "2020-12-16 12:12:29", "updated_at": "2020-12-16 12:12:29", "deleted_at": null }, { "id": 92, "price": 46.99, "options": "{\"15\":\"large\",\"16\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 14, "created_at": "2020-12-16 12:12:29", "updated_at": "2020-12-16 12:12:29", "deleted_at": null }, { "id": 93, "price": 47.99, "options": "{\"15\":\"large\",\"16\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 14, "created_at": "2020-12-16 12:12:29", "updated_at": "2020-12-16 12:12:29", "deleted_at": null }, { "id": 94, "price": 48.99, "options": "{\"15\":\"family\",\"16\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 14, "created_at": "2020-12-16 12:12:29", "updated_at": "2020-12-16 12:12:29", "deleted_at": null }, { "id": 95, "price": 49.99, "options": "{\"15\":\"family\",\"16\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 14, "created_at": "2020-12-16 12:12:29", "updated_at": "2020-12-16 12:12:29", "deleted_at": null }, { "id": 96, "price": 50.99, "options": "{\"15\":\"family\",\"16\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 14, "created_at": "2020-12-16 12:12:29", "updated_at": "2020-12-16 12:12:29", "deleted_at": null }], "has_variants": true, "description": "" }; items[15] = { "name": "Capricciosa Pizza", "id": 15, "priceNotFormated": 14.99, "price": "\u20ac14,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/0102bebe-b6c4-46b0-9195-ee06bca71a37_large.jpg", "extras": [{ "id": 51, "item_id": 15, "price": 1, "name": "Olive", "created_at": "2020-12-16 12:12:30", "updated_at": "2020-12-16 12:12:30", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,00" }, { "id": 52, "item_id": 15, "price": 0.5, "name": "Mushroom", "created_at": "2020-12-16 12:12:30", "updated_at": "2020-12-16 12:12:30", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,50" }, { "id": 53, "item_id": 15, "price": 2, "name": "Peperoni", "created_at": "2020-12-16 12:12:30", "updated_at": "2020-12-16 12:12:30", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac2,00" }, { "id": 54, "item_id": 15, "price": 1, "name": "Peperoni", "created_at": "2020-12-16 12:12:30", "updated_at": "2020-12-16 12:12:30", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac1,00" }], "options": [{ "id": 17, "item_id": 15, "name": "Size", "options": "Small,Medium,Large,Family", "created_at": "2020-12-16 12:12:30", "updated_at": "2020-12-16 12:12:30", "deleted_at": null }, { "id": 18, "item_id": 15, "name": "Crust", "options": "Hand-Tosset,Thin Crust,Double Decker", "created_at": "2020-12-16 12:12:30", "updated_at": "2020-12-16 12:12:30", "deleted_at": null }], "variants": [{ "id": 97, "price": 14.99, "options": "{\"17\":\"small\",\"18\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 15, "created_at": "2020-12-16 12:12:30", "updated_at": "2020-12-16 12:12:30", "deleted_at": null }, { "id": 98, "price": 15.99, "options": "{\"17\":\"small\",\"18\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 15, "created_at": "2020-12-16 12:12:30", "updated_at": "2020-12-16 12:12:30", "deleted_at": null }, { "id": 99, "price": 16.99, "options": "{\"17\":\"small\",\"18\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 15, "created_at": "2020-12-16 12:12:31", "updated_at": "2020-12-16 12:12:31", "deleted_at": null }, { "id": 100, "price": 17.99, "options": "{\"17\":\"medium\",\"18\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 15, "created_at": "2020-12-16 12:12:31", "updated_at": "2020-12-16 12:12:31", "deleted_at": null }, { "id": 101, "price": 18.99, "options": "{\"17\":\"medium\",\"18\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 15, "created_at": "2020-12-16 12:12:31", "updated_at": "2020-12-16 12:12:31", "deleted_at": null }, { "id": 102, "price": 19.99, "options": "{\"17\":\"medium\",\"18\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 15, "created_at": "2020-12-16 12:12:31", "updated_at": "2020-12-16 12:12:31", "deleted_at": null }, { "id": 103, "price": 20.99, "options": "{\"17\":\"large\",\"18\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 15, "created_at": "2020-12-16 12:12:31", "updated_at": "2020-12-16 12:12:31", "deleted_at": null }, { "id": 104, "price": 21.99, "options": "{\"17\":\"large\",\"18\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 15, "created_at": "2020-12-16 12:12:31", "updated_at": "2020-12-16 12:12:31", "deleted_at": null }, { "id": 105, "price": 22.99, "options": "{\"17\":\"large\",\"18\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 15, "created_at": "2020-12-16 12:12:31", "updated_at": "2020-12-16 12:12:31", "deleted_at": null }, { "id": 106, "price": 23.99, "options": "{\"17\":\"family\",\"18\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 15, "created_at": "2020-12-16 12:12:31", "updated_at": "2020-12-16 12:12:31", "deleted_at": null }, { "id": 107, "price": 24.99, "options": "{\"17\":\"family\",\"18\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 15, "created_at": "2020-12-16 12:12:31", "updated_at": "2020-12-16 12:12:31", "deleted_at": null }, { "id": 108, "price": 25.99, "options": "{\"17\":\"family\",\"18\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 15, "created_at": "2020-12-16 12:12:31", "updated_at": "2020-12-16 12:12:31", "deleted_at": null }], "has_variants": true, "description": "tomato sauce, mozzarella sabelli, ham, fresh mushrooms, extra virgin olive oil" }; items[16] = { "name": "Quattro Formaggi Pizza", "id": 16, "priceNotFormated": 14.99, "price": "\u20ac14,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/0054144d-131c-4807-a209-cee855415182_large.jpg", "extras": [{ "id": 55, "item_id": 16, "price": 1, "name": "Olive", "created_at": "2020-12-16 12:12:32", "updated_at": "2020-12-16 12:12:32", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,00" }, { "id": 56, "item_id": 16, "price": 0.5, "name": "Mushroom", "created_at": "2020-12-16 12:12:32", "updated_at": "2020-12-16 12:12:32", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,50" }, { "id": 57, "item_id": 16, "price": 2, "name": "Peperoni", "created_at": "2020-12-16 12:12:32", "updated_at": "2020-12-16 12:12:32", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac2,00" }, { "id": 58, "item_id": 16, "price": 1, "name": "Peperoni", "created_at": "2020-12-16 12:12:32", "updated_at": "2020-12-16 12:12:32", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac1,00" }], "options": [{ "id": 19, "item_id": 16, "name": "Size", "options": "Small,Medium,Large,Family", "created_at": "2020-12-16 12:12:32", "updated_at": "2020-12-16 12:12:32", "deleted_at": null }, { "id": 20, "item_id": 16, "name": "Crust", "options": "Hand-Tosset,Thin Crust,Double Decker", "created_at": "2020-12-16 12:12:32", "updated_at": "2020-12-16 12:12:32", "deleted_at": null }], "variants": [{ "id": 109, "price": 14.99, "options": "{\"19\":\"small\",\"20\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 16, "created_at": "2020-12-16 12:12:32", "updated_at": "2020-12-16 12:12:32", "deleted_at": null }, { "id": 110, "price": 15.99, "options": "{\"19\":\"small\",\"20\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 16, "created_at": "2020-12-16 12:12:32", "updated_at": "2020-12-16 12:12:32", "deleted_at": null }, { "id": 111, "price": 16.99, "options": "{\"19\":\"small\",\"20\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 16, "created_at": "2020-12-16 12:12:32", "updated_at": "2020-12-16 12:12:32", "deleted_at": null }, { "id": 112, "price": 17.99, "options": "{\"19\":\"medium\",\"20\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 16, "created_at": "2020-12-16 12:12:32", "updated_at": "2020-12-16 12:12:32", "deleted_at": null }, { "id": 113, "price": 18.99, "options": "{\"19\":\"medium\",\"20\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 16, "created_at": "2020-12-16 12:12:33", "updated_at": "2020-12-16 12:12:33", "deleted_at": null }, { "id": 114, "price": 19.99, "options": "{\"19\":\"medium\",\"20\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 16, "created_at": "2020-12-16 12:12:33", "updated_at": "2020-12-16 12:12:33", "deleted_at": null }, { "id": 115, "price": 20.99, "options": "{\"19\":\"large\",\"20\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 16, "created_at": "2020-12-16 12:12:33", "updated_at": "2020-12-16 12:12:33", "deleted_at": null }, { "id": 116, "price": 21.99, "options": "{\"19\":\"large\",\"20\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 16, "created_at": "2020-12-16 12:12:33", "updated_at": "2020-12-16 12:12:33", "deleted_at": null }, { "id": 117, "price": 22.99, "options": "{\"19\":\"large\",\"20\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 16, "created_at": "2020-12-16 12:12:33", "updated_at": "2020-12-16 12:12:33", "deleted_at": null }, { "id": 118, "price": 23.99, "options": "{\"19\":\"family\",\"20\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 16, "created_at": "2020-12-16 12:12:33", "updated_at": "2020-12-16 12:12:33", "deleted_at": null }, { "id": 119, "price": 24.99, "options": "{\"19\":\"family\",\"20\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 16, "created_at": "2020-12-16 12:12:33", "updated_at": "2020-12-16 12:12:33", "deleted_at": null }, { "id": 120, "price": 25.99, "options": "{\"19\":\"family\",\"20\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 16, "created_at": "2020-12-16 12:12:33", "updated_at": "2020-12-16 12:12:33", "deleted_at": null }], "has_variants": true, "description": "cream (animal), mozzarella Sabelli, blue cheese, emmental, parmesan, extra virgin olive oil" }; items[17] = { "name": "Marco Polo Pizza", "id": 17, "priceNotFormated": 14.99, "price": "\u20ac14,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/f77218a9-676e-434e-ac5b-4ae3dc5795b3_large.jpg", "extras": [{ "id": 59, "item_id": 17, "price": 1, "name": "Olive", "created_at": "2020-12-16 12:12:33", "updated_at": "2020-12-16 12:12:33", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac1,00" }, { "id": 60, "item_id": 17, "price": 0.5, "name": "Mushroom", "created_at": "2020-12-16 12:12:33", "updated_at": "2020-12-16 12:12:33", "deleted_at": null, "extra_for_all_variants": 1, "priceFormated": "\u20ac0,50" }, { "id": 61, "item_id": 17, "price": 2, "name": "Peperoni", "created_at": "2020-12-16 12:12:33", "updated_at": "2020-12-16 12:12:33", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac2,00" }, { "id": 62, "item_id": 17, "price": 1, "name": "Peperoni", "created_at": "2020-12-16 12:12:34", "updated_at": "2020-12-16 12:12:34", "deleted_at": null, "extra_for_all_variants": 0, "priceFormated": "\u20ac1,00" }], "options": [{ "id": 21, "item_id": 17, "name": "Size", "options": "Small,Medium,Large,Family", "created_at": "2020-12-16 12:12:34", "updated_at": "2020-12-16 12:12:34", "deleted_at": null }, { "id": 22, "item_id": 17, "name": "Crust", "options": "Hand-Tosset,Thin Crust,Double Decker", "created_at": "2020-12-16 12:12:34", "updated_at": "2020-12-16 12:12:34", "deleted_at": null }], "variants": [{ "id": 121, "price": 14.99, "options": "{\"21\":\"small\",\"22\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 17, "created_at": "2020-12-16 12:12:34", "updated_at": "2020-12-16 12:12:34", "deleted_at": null }, { "id": 122, "price": 15.99, "options": "{\"21\":\"small\",\"22\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 17, "created_at": "2020-12-16 12:12:34", "updated_at": "2020-12-16 12:12:34", "deleted_at": null }, { "id": 123, "price": 16.99, "options": "{\"21\":\"small\",\"22\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 17, "created_at": "2020-12-16 12:12:34", "updated_at": "2020-12-16 12:12:34", "deleted_at": null }, { "id": 124, "price": 17.99, "options": "{\"21\":\"medium\",\"22\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 17, "created_at": "2020-12-16 12:12:34", "updated_at": "2020-12-16 12:12:34", "deleted_at": null }, { "id": 125, "price": 18.99, "options": "{\"21\":\"medium\",\"22\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 17, "created_at": "2020-12-16 12:12:34", "updated_at": "2020-12-16 12:12:34", "deleted_at": null }, { "id": 126, "price": 19.99, "options": "{\"21\":\"medium\",\"22\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 17, "created_at": "2020-12-16 12:12:34", "updated_at": "2020-12-16 12:12:34", "deleted_at": null }, { "id": 127, "price": 20.99, "options": "{\"21\":\"large\",\"22\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 17, "created_at": "2020-12-16 12:12:34", "updated_at": "2020-12-16 12:12:34", "deleted_at": null }, { "id": 128, "price": 21.99, "options": "{\"21\":\"large\",\"22\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 17, "created_at": "2020-12-16 12:12:34", "updated_at": "2020-12-16 12:12:34", "deleted_at": null }, { "id": 129, "price": 22.99, "options": "{\"21\":\"large\",\"22\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 17, "created_at": "2020-12-16 12:12:35", "updated_at": "2020-12-16 12:12:35", "deleted_at": null }, { "id": 130, "price": 23.99, "options": "{\"21\":\"family\",\"22\":\"hand-tosset\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 17, "created_at": "2020-12-16 12:12:35", "updated_at": "2020-12-16 12:12:35", "deleted_at": null }, { "id": 131, "price": 24.99, "options": "{\"21\":\"family\",\"22\":\"thin-crust\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 17, "created_at": "2020-12-16 12:12:35", "updated_at": "2020-12-16 12:12:35", "deleted_at": null }, { "id": 132, "price": 25.99, "options": "{\"21\":\"family\",\"22\":\"double-decker\"}", "image": "", "qty": 0, "enable_qty": 0, "order": 0, "item_id": 17, "created_at": "2020-12-16 12:12:35", "updated_at": "2020-12-16 12:12:35", "deleted_at": null }], "has_variants": true, "description": "tomato sauce, Sabelli mozzarella, chicken fillet, smoked cheese, corn, extra virgin olive oil" }; items[18] = { "name": "Spaghetti Carbonara (450g)", "id": 18, "priceNotFormated": 11.99, "price": "\u20ac11,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/b65d5389-4742-4a78-9d94-f31110984db6_large.jpg", "extras": [], "options": [], "variants": [], "has_variants": false, "description": "fresh pasta, cream (animal), onion, pancakes (smoked bacon), egg, parmesan" }; items[19] = { "name": "Spaghetti Formaggi (450g)", "id": 19, "priceNotFormated": 11.99, "price": "\u20ac11,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/4a2067cb-f39c-4b26-83ef-9097512d3328_large.jpg", "extras": [], "options": [], "variants": [], "has_variants": false, "description": "fresh pasta, cream (animal), blue cheese, emmental, parmesan" }; items[20] = { "name": "Tagliatelle with mushrooms (400g)", "id": 20, "priceNotFormated": 11.99, "price": "\u20ac11,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/0bae6238-dda6-4630-b300-5125fde865d4_large.jpg", "extras": [], "options": [], "variants": [], "has_variants": false, "description": "fresh pasta, cream (animal), mushrooms, parmesan" }; items[21] = { "name": "Chicken risotto (450g)", "id": 21, "priceNotFormated": 11.99, "price": "\u20ac11,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/033c32c1-cdae-495e-910f-66b5fa239297_large.jpg", "extras": [], "options": [], "variants": [], "has_variants": false, "description": "Arborio rice, chicken breast, onion, parmesan" }; items[22] = { "name": "Risotto with mushrooms (450g)", "id": 22, "priceNotFormated": 11.99, "price": "\u20ac11,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/08d82944-f947-48f4-a197-a3199bb3b6e7_large.jpg", "extras": [], "options": [], "variants": [], "has_variants": false, "description": "Arborio rice, mushrooms, garlic, parmesan" }; items[23] = { "name": "Tagliatelle with Bolognese Sauce (400g)", "id": 23, "priceNotFormated": 11.99, "price": "\u20ac11,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/cc695ba9-8af3-47a4-8e41-dc1706cbf2c3_large.jpg", "extras": [], "options": [], "variants": [], "has_variants": false, "description": "fresh pasta, bolognese sauce, parmesan" }; items[24] = { "name": "Lasagna Classic (450g)", "id": 24, "priceNotFormated": 11.99, "price": "\u20ac11,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/94d44523-ec90-4069-bd11-eb9588207c31_large.jpg", "extras": [], "options": [], "variants": [], "has_variants": false, "description": "Bolognese sauce, mozzarella Sabelli" }; items[25] = { "name": "Napoli Lasagna (450g)", "id": 25, "priceNotFormated": 11.99, "price": "\u20ac11,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/4c367950-992c-4711-ab56-42bed10de86c_large.jpg", "extras": [], "options": [], "variants": [], "has_variants": false, "description": "chicken fillet, cream (animal), corn, blue cheese, mozzarella Sabelli" }; items[26] = { "name": "Lasagna Formagio (450g)", "id": 26, "priceNotFormated": 11.99, "price": "\u20ac11,99", "image": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/8bafc3ec-82e7-46f8-964a-77a13e4ddf96_large.jpg", "extras": [], "options": [], "variants": [], "has_variants": false, "description": "smoked cheese, blue cheese, emmental, cream (animal), mozzarella Sabelli" };</script>
+    <script type="text/javascript">
+        function getLocation(callback) {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            $.ajax({
+                type: 'GET',
+                url: '/get/rlocation/' + $('#rid').val(),
+                success: function (response) {
+                    if (response.status) {
+                        return callback(true, response.data)
+                    }
+                }, error: function (response) {
+                    return callback(false, response.responseJSON.errMsg);
+                }
+            })
+        }
+
+        function initializeMap(lat, lng) {
+            var map_options = {
+                zoom: 13,
+                center: new google.maps.LatLng(lat, lng),
+                mapTypeId: "terrain",
+                scaleControl: true
+            }
+
+            map_location = new google.maps.Map(document.getElementById("map3"), map_options);
+        }
+
+        function initializeMarker(lat, lng) {
+            var markerData = new google.maps.LatLng(lat, lng);
+            marker = new google.maps.Marker({
+                position: markerData,
+                map: map_location,
+                icon: start
+            });
+        }
+
+        var start = "https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/48/Map-Marker-Ball-Pink.png"
+        var area = "https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/48/Map-Marker-Ball-Chartreuse.png"
+        var map_location = null;
+        var map_area = null;
+        var marker = null;
+        var infoWindow = null;
+        var lat = null;
+        var lng = null;
+        var circle = null;
+        var isClosed = false;
+        var poly = null;
+        var markers = [];
+        var markerArea = null;
+        var markerIndex = null;
+        var path = null;
+
+        var categories = ["salads0", "pizza1", "freshpastaandrisotto2", "lasagna3"];
+
+        window.onload ? window.onload() : null;
+
+        window.onload = function () {
+            //var map, infoWindow, marker, lng, lat;
+
+            getLocation(function (isFetched, currPost) {
+                if (isFetched) {
+
+
+                    if (currPost.lat != 0 && currPost.lng != 0) {
+                        //initialize map
+                        initializeMap(currPost.lat, currPost.lng)
+
+                        //initialize marker
+                        initializeMarker(currPost.lat, currPost.lng)
+
+                        //var isClosed = false;
+                    }
+                }
+            });
+        }
+
+
+        var mybutton = document.getElementById("scrollTopBtn");
+
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            //document.body.scrollTop = 0;
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            document.documentElement.scrollTop = 0;
+        }
+
+
+
+        $(".nav-item-category").on('click', function () {
+            $.each(categories, function (index, value) {
+                $("." + value).show();
+
+                //$("#nav_"+value).removeClass("active");
+            });
+
+            var id = $(this).attr("id");
+            var category_id = id.substr(id.indexOf("_") + 1, id.length);
+            //$("#nav_"+category_id).addClass("active");
+
+            //$("."+category_id).hide();
+
+            $.each(categories, function (index, value) {
+                if (value != category_id) {
+                    $("." + value).hide();
+                }
+            });
+        });
+    </script>
+
+    <!-- Custom JS defined by admin -->
+
+</body>
+
+</html>
